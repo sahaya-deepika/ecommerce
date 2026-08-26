@@ -1,0 +1,322 @@
+.site-footer {
+  width: 100%;
+  background: #f3f0e8;
+  color: #1f1f1f;
+  padding: 0 0 24px;
+}
+
+.footer-hero {
+  width: 100%;
+  background: #f3f0e8;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.footer-hero-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.customer-say-section {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 26px 0 12px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.customer-say-section h2 {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(2.4rem, 3vw, 4rem);
+  font-weight: 700;
+  color: #1e1e1e;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.customer-say-section p {
+  margin: 18px auto 28px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #474747;
+  font-style: italic;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.customer-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.customer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.review-card,
+.mini-product-card,
+.delivery-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(17, 24, 19, 0.12);
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.review-card {
+  padding: 16px 18px 18px;
+  min-height: 260px;
+}
+
+.review-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.review-product-name {
+  font-size: 1.08rem;
+  color: #2d2d2d;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: #e2b420;
+  font-size: 1.28rem;
+}
+
+.review-main {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  min-height: 170px;
+}
+
+.product-figure {
+  position: relative;
+  width: 180px;
+  height: 190px;
+  flex-shrink: 0;
+  margin-left: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.product-photo {
+  width: 120px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.stand {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  width: 150px;
+  height: 42px;
+  background: linear-gradient(180deg, #0d7975, #0a5f66);
+  border-radius: 50% 50% 18px 18px / 60% 60% 18px 18px;
+  z-index: 1;
+}
+
+.review-copy {
+  flex: 1;
+  min-width: 0;
+  padding-top: 8px;
+}
+
+.identity-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.identity-row h3 {
+  margin: 0;
+  font-size: 1.45rem;
+  color: #232323;
+  font-weight: 600;
+}
+
+.verified-buyer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #5b3fd3;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.review-copy p {
+  margin: 0;
+  text-align: left;
+  color: #404040;
+  font-size: 1.04rem;
+  line-height: 1.55;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.mini-product-card {
+  padding: 14px 18px;
+  margin-top: 6px;
+}
+
+.mini-product-header {
+  font-size: 0.9rem;
+  color: #3e3e3e;
+  margin-bottom: 10px;
+}
+
+.mini-product-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.mini-product-figure {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-product-photo {
+  width: 72px;
+  height: 86px;
+  object-fit: contain;
+  display: block;
+}
+
+.mini-product-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.mini-label {
+  font-size: 0.95rem;
+  color: #2a2a2a;
+}
+
+.mini-product-text strong {
+  color: #149556;
+  font-size: 1.06rem;
+}
+
+.delivery-strip {
+  width: min(1280px, calc(100% - 48px));
+  margin: 26px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.delivery-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 12px 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+}
+
+.delivery-figure {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.delivery-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.delivery-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.delivery-copy h4 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.delivery-copy p {
+  margin: 0;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #3a3a3a;
+}
+
+@media (max-width: 980px) {
+
+  .customer-review-grid,
+  .delivery-strip {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .customer-say-section,
+  .delivery-strip {
+    width: min(100% - 20px, 1280px);
+  }
+}
+
+@media (max-width: 560px) {
+
+  .customer-say-section,
+  .delivery-strip {
+    width: min(100% - 18px, 1280px);
+  }
+
+  .review-card {
+    padding: 14px 12px 12px;
+  }
+
+  .review-main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .review-copy p,
+  .delivery-copy p {
+    text-align: center;
+  }
+
+  .identity-row {
+    justify-content: center;
+  }
+
+  .delivery-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}

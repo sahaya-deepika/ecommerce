@@ -1,0 +1,63 @@
+.header{
+    width: 100%;
+}
+.top-header{
+
+    display: flex;
+    align-items: center;
+    padding: 5px 130px;
+    width: 100%;
+    background-color: rgb(0, 154, 0);
+    border-radius: 10px;
+    color: white;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-container{
+    width: 250px;
+    height:auto;
+    padding: 10px;
+    
+}
+.logo{
+    width: 220px;
+    height: 100%;
+}
+
+.gift{
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.offer-text {
+    line-height: 1.4;
+    text-align: left;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+.icons {
+    display: flex;
+    gap: 25px;
+    justify-self: end;
+    align-items: center;
+}
+
+.icon {
+    font-size: 22px;
+    cursor: pointer;
+}

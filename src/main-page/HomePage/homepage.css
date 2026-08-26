@@ -1,0 +1,172 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+.homepage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   MAIN BANNER
+========================= */
+
+.main-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    overflow: hidden;
+    
+
+}
+
+.main-banner img {
+    width: 1100px;
+    height: 450px;
+    object-fit: fill;
+    display: block;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   SCROLL IMAGES
+========================= */
+
+.scroll-images {
+    width: 95vw;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.scroll-images img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .main-banner {
+        width: 95vw;
+    }
+
+    .main-banner img {
+        width: 90vw;
+        height: 450px;
+    }
+
+    .scroll-images {
+        gap: 20px;
+    }
+
+    .scroll-images img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* =========================
+   BENEFITS SCROLLING SECTION
+========================= */
+
+.benefits-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    padding: 2px 0;
+}
+
+.benefits-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    animation: benefitsScroll 20s linear infinite;
+}
+
+
+/* =========================
+   INDIVIDUAL BENEFIT
+========================= */
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 0 40px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   BENEFIT TEXT
+========================= */
+
+.benefit-item span {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   BENEFIT IMAGE
+========================= */
+
+.benefit-item img {
+    width: 45px;
+    height: 45px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+@keyframes benefitsScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+
+html,
+body,
+#root {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}

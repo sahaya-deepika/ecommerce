@@ -1,0 +1,150 @@
+/* =========================
+   BEST SELLING COMBO
+========================= */
+
+.best-selling-combo-section {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.best-selling-combo-section h2 {
+    text-align: center;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    color: #061826;
+
+    margin: 0 0 40px;
+}
+
+
+/* =========================
+   COMBO TRACK
+========================= */
+
+.combo-track {
+    width: 100%;
+
+    display: flex;
+    gap: 30px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 10px 20px 30px;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.combo-track::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================
+   COMBO CARD
+========================= */
+
+.combo-card {
+    flex: 0 0 370px;
+
+    width: 370px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   COMBO IMAGE
+========================= */
+
+.combo-card img {
+    width: 100%;
+    height: 370px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   COMBO DETAILS
+========================= */
+
+.combo-details {
+    padding: 12px 5px 5px;
+}
+
+
+/* =========================
+   COMBO NAME
+========================= */
+
+.combo-name {
+    margin: 0 0 6px;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    color: #061826;
+
+    line-height: 1.3;
+}
+
+
+/* =========================
+   COMBO PRICE
+========================= */
+
+.combo-price {
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    color: #0b850f;
+}
+
+
+/* =========================
+   VIEW ALL BUTTON
+========================= */
+
+.combo-view-all-btn {
+    display: block;
+
+    margin: 30px auto 0;
+
+    padding: 14px 45px;
+
+    background: white;
+
+    color: #0b850f;
+
+    border: 2px solid #0b850f;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.combo-view-all-btn:hover {
+    background: #0b850f;
+    color: white;
+}
+
