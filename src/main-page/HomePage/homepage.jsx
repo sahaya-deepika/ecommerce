@@ -14,6 +14,7 @@ import Bestsellingcombo from '../Bestsellingcombo/Bestsellingcombo.jsx';
 import Mothercare from '../mothercare/mothercare.jsx';
 
 function HomePage() {
+    const name = "sakal";
 
     return (
         <div className="homepage">
@@ -118,10 +119,10 @@ function HomePage() {
 
                 </div>
 
-            </div>
+            </div>, 
 
-            
-         <Categories />
+        {true && (<>//ithu parcel react or vite react ?? vite kulika polayaa nee , you shut u</>)} 
+         <Categories name={"DEEPI"} />
          <BestSellers />
             <Concern />
             <Bestsellingcombo/>

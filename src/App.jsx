@@ -4,6 +4,7 @@ import Footer from './layouts/footer/footer.jsx';
 import HomePage from './main-page/HomePage/homepage.jsx';
 
 function App() {
+  console.log("Ap rendered");
   return (
     <>
       <Header />

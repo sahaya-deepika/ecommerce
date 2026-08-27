@@ -10,11 +10,11 @@ import coldPressOils from "../../assets/cold-press-oils.webp";
 import homePersonalCare from "../../assets/home-personal-care.webp";
 
 
-function Categories() {
+function Categories(prop) {
     return (
         <section className="categories-section">
 
-            <h2>Shop By Categories</h2>
+            <h2>Shop By Categories, {prop.name}</h2>
 
             <div className="categories-track">
 
