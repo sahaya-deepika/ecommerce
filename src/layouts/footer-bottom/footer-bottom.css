@@ -196,4 +196,44 @@
     .footer-bottom {
         width: min(100% - 18px, 1280px);
     }
+
+    .footer-grid {
+        gap: 22px;
+    }
+
+    .contact-column h3,
+    .links-column h3 {
+        font-size: 1rem;
+    }
+
+    .contact-column p {
+        font-size: 0.92rem;
+        margin-bottom: 12px;
+    }
+
+    .links-column li {
+        font-size: 0.92rem;
+        margin-bottom: 14px;
+    }
+
+    .brand-column {
+        align-items: center;
+    }
+
+    .brand-emblem {
+        width: 65px;
+        height: 65px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 14px 0 0;
+    }
+
+    .social-circle {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
+    }
 }

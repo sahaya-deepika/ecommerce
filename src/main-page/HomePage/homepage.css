@@ -155,20 +155,17 @@
 @media (max-width: 768px) {
 
     .main-banner {
-        width: 100%;
         margin: 12px auto;
     }
 
     .main-banner img {
-        width: 94vw;
+        width: 95vw;
         height: auto;
-        max-height: 300px;
         border-radius: 12px;
     }
 
     .scroll-images {
         gap: 20px;
-        width: 100%;
     }
 
     .scroll-images img {
@@ -177,7 +174,7 @@
     }
 
     .benefit-item {
-        padding: 0 20px;
+        padding: 0 22px;
     }
 
     .benefit-item span {
@@ -190,6 +187,11 @@
     }
 }
 
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+========================= */
+
 @media (max-width: 480px) {
 
     .main-banner {
@@ -199,17 +201,17 @@
     .main-banner img {
         width: 96vw;
         height: auto;
-        max-height: 220px;
         border-radius: 10px;
     }
 
     .scroll-images {
         gap: 15px;
+        margin: 20px auto;
     }
 
     .scroll-images img {
-        width: 65px;
-        height: 65px;
+        width: 70px;
+        height: 70px;
     }
 
     .benefit-item {
@@ -222,22 +224,7 @@
     }
 
     .benefit-item img {
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
     }
-}
-
-
-html,
-body,
-#root {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-* {
-    box-sizing: border-box;
 }

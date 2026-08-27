@@ -296,27 +296,74 @@
     width: min(100% - 18px, 1280px);
   }
 
+  .customer-say-section p {
+    font-size: 0.95rem;
+    margin: 12px auto 20px;
+  }
+
   .review-card {
     padding: 14px 12px 12px;
+    min-height: auto;
   }
 
   .review-main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    min-height: auto;
+    gap: 14px;
+  }
+
+  .product-figure {
+    width: 140px;
+    height: 150px;
+    margin-left: 0;
+  }
+
+  .product-photo {
+    width: 90px;
+    height: 120px;
+  }
+
+  .stand {
+    width: 120px;
+    height: 35px;
   }
 
   .review-copy p,
   .delivery-copy p {
     text-align: center;
+    font-size: 0.92rem;
   }
 
   .identity-row {
     justify-content: center;
   }
 
+  .identity-row h3 {
+    font-size: 1.2rem;
+  }
+
+  .delivery-strip {
+    gap: 14px;
+  }
+
   .delivery-card {
     flex-direction: column;
     text-align: center;
+    padding: 14px 10px;
+  }
+
+  .delivery-figure {
+    width: 60px;
+    height: 60px;
+  }
+
+  .delivery-copy h4 {
+    font-size: 0.95rem;
+  }
+
+  .mini-product-body {
+    gap: 12px;
   }
 }

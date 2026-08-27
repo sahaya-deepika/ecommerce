@@ -161,12 +161,7 @@
 
     .best-selling-combo-section h2 {
         font-size: 40px;
-        margin-bottom: 35px;
-    }
-
-    .combo-track {
-        gap: 25px;
-        padding: 10px 15px 25px;
+        margin-bottom: 30px;
     }
 
     .combo-card {
@@ -197,8 +192,8 @@
     }
 
     .combo-track {
-        gap: 18px;
-        padding: 8px 10px 20px;
+        gap: 20px;
+        padding: 8px 10px 25px;
     }
 
     .combo-card {
@@ -211,7 +206,7 @@
     }
 
     .combo-name {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .combo-price {
@@ -233,7 +228,7 @@
 
     .best-selling-combo-section {
         padding: 0 10px;
-        margin: 30px 0;
+        margin: 25px 0;
     }
 
     .best-selling-combo-section h2 {
@@ -242,8 +237,8 @@
     }
 
     .combo-track {
-        gap: 14px;
-        padding: 5px 5px 15px;
+        gap: 15px;
+        padding: 5px 5px 20px;
     }
 
     .combo-card {
@@ -252,12 +247,11 @@
     }
 
     .combo-card img {
-        height: auto;
-        aspect-ratio: 1;
+        height: 220px;
     }
 
     .combo-name {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .combo-price {
