@@ -32,15 +32,13 @@
 
 .mother-care-track {
     width: 100%;
-
     display: flex;
     gap: 30px;
-
     overflow-x: auto;
     overflow-y: hidden;
-
     padding: 10px 0 30px;
-
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -56,12 +54,10 @@
 
 .mother-care-card {
     flex: 0 0 calc((100% - 90px) / 4);
-
     width: calc((100% - 90px) / 4);
-
     text-align: center;
-
     min-width: 0;
+    scroll-snap-align: start;
 }
 
 
