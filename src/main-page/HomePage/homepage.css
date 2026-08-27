@@ -19,7 +19,7 @@
     justify-content: center;
     margin: 20px auto;
     overflow: hidden;
-    
+
 
 }
 
@@ -55,32 +55,6 @@
 
 
 /* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 768px) {
-
-    .main-banner {
-        width: 95vw;
-    }
-
-    .main-banner img {
-        width: 90vw;
-        height: 450px;
-    }
-
-    .scroll-images {
-        gap: 20px;
-    }
-
-    .scroll-images img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-
-/* =========================
    BENEFITS SCROLLING SECTION
 ========================= */
 
@@ -95,7 +69,6 @@
     display: flex;
     align-items: center;
     width: max-content;
-
     animation: benefitsScroll 20s linear infinite;
 }
 
@@ -108,9 +81,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-
     padding: 0 40px;
-
     white-space: nowrap;
 }
 
@@ -133,7 +104,6 @@
 .benefit-item img {
     width: 45px;
     height: 45px;
-
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -144,7 +114,6 @@
 ========================= */
 
 @keyframes benefitsScroll {
-
     from {
         transform: translateX(0);
     }
@@ -152,9 +121,111 @@
     to {
         transform: translateX(-50%);
     }
-
 }
 
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+    .main-banner img {
+        width: 95vw;
+        height: 400px;
+    }
+
+    .scroll-images {
+        gap: 30px;
+    }
+
+    .benefit-item {
+        padding: 0 30px;
+    }
+
+    .benefit-item span {
+        font-size: 16px;
+    }
+
+    .benefit-item img {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-banner {
+        width: 100%;
+        margin: 12px auto;
+    }
+
+    .main-banner img {
+        width: 94vw;
+        height: auto;
+        max-height: 300px;
+        border-radius: 12px;
+    }
+
+    .scroll-images {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .scroll-images img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .benefit-item {
+        padding: 0 20px;
+    }
+
+    .benefit-item span {
+        font-size: 14px;
+    }
+
+    .benefit-item img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .main-banner {
+        margin: 8px auto;
+    }
+
+    .main-banner img {
+        width: 96vw;
+        height: auto;
+        max-height: 220px;
+        border-radius: 10px;
+    }
+
+    .scroll-images {
+        gap: 15px;
+    }
+
+    .scroll-images img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .benefit-item {
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .benefit-item span {
+        font-size: 12px;
+    }
+
+    .benefit-item img {
+        width: 28px;
+        height: 28px;
+    }
+}
 
 
 html,

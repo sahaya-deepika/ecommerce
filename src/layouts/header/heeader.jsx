@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import './heeader.css';
 import logo from '../../assets/logo.webp';
 import { FaSearch, FaUser, FaShoppingCart } from 'react-icons/fa';
-function Header() {
 
-    const handlesearch = () => { 
+function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handlesearch = () => {
         console.log("search clicked");
     }
 
@@ -13,49 +16,49 @@ function Header() {
 
     const handlecart = () => {
         console.log("cart clicked");
-    }   
+    }
+
     return (
-        
-  <header className="header">
+        <header className="header">
 
-<div className="top-header">
+            <div className="top-header">
+                <span className="gift">🎁</span>
+                <div className="offer-text">
+                    Get exclusive Deals Only on WhatsApp
+                    <br />
+                    Channel - Join Now
+                </div>
+            </div>
 
-    <span className="gift">🎁</span>
+            <div className="main-header">
+                <div className="logo-container">
+                    <img src={logo} alt="logo" className="logo" />
+                </div>
 
-    <div className="offer-text">
-        Get exclusive Deals Only on WhatsApp
-        <br />
-        Channel - Join Now
-    </div>
+                <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+                    <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
+                    <a href="#" onClick={() => setMenuOpen(false)}>Products</a>
+                    <a href="#" onClick={() => setMenuOpen(false)}>About</a>
+                    <a href="#" onClick={() => setMenuOpen(false)}>Contact</a>
+                </nav>
 
-</div>
-<div className="main-header">
+                <div className="icons">
+                    <FaSearch className="icon" onClick={handlesearch} />
+                    <FaUser className="icon" onClick={handleprofile} />
+                    <FaShoppingCart className="icon" onClick={handlecart} />
+                </div>
 
+                <button
+                    className="hamburger"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {menuOpen ? '✕' : '☰'}
+                </button>
+            </div>
 
-  <div className="logo-container">
-            
-            <img src={logo} alt="logo" className="logo" />
-</div>
-
-
-<nav className="nav">
-
-            <a href="#">Home</a>          
-              <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-</nav>
-<div className="icons">
-
-    <FaSearch onClick={handlesearch} />
-    <FaUser onClick={handleprofile} />
-    <FaShoppingCart onClick={handlecart} />
-
-</div>
-
-</div>
-            
-</header>
+        </header>
     );
 }
+
 export default Header;

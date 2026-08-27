@@ -179,3 +179,151 @@
     background: #38cc3d;
     color: white;
 }
+
+
+/* =========================
+   TABLET (≤ 1024px)
+========================= */
+
+@media (max-width: 1024px) {
+
+    .mother-care-section {
+        padding: 0 25px;
+        margin: 45px 0;
+    }
+
+    .mother-care-section h2 {
+        font-size: 40px;
+        margin-bottom: 35px;
+    }
+
+    .mother-care-track {
+        gap: 25px;
+    }
+
+    .mother-care-card {
+        flex: 0 0 280px;
+        width: 280px;
+    }
+
+    .mother-care-card img {
+        height: 280px;
+    }
+
+    .mother-care-name {
+        font-size: 17px;
+    }
+
+    .mother-care-price {
+        font-size: 18px;
+    }
+
+    .mother-care-btn {
+        padding: 14px 18px;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   MOBILE (≤ 768px)
+========================= */
+
+@media (max-width: 768px) {
+
+    .mother-care-section {
+        padding: 0 15px;
+        margin: 35px 0;
+    }
+
+    .mother-care-section h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .mother-care-track {
+        gap: 18px;
+        padding: 8px 0 20px;
+    }
+
+    .mother-care-card {
+        flex: 0 0 260px;
+        width: 260px;
+    }
+
+    .mother-care-card img {
+        height: 260px;
+    }
+
+    .mother-care-name {
+        font-size: 16px;
+        min-height: 44px;
+    }
+
+    .mother-care-price {
+        font-size: 17px;
+    }
+
+    .mother-care-btn {
+        padding: 13px 16px;
+        font-size: 15px;
+        border-radius: 28px;
+    }
+
+    .mother-care-view-all-btn {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (≤ 480px)
+========================= */
+
+@media (max-width: 480px) {
+
+    .mother-care-section {
+        padding: 0 10px;
+        margin: 30px 0;
+    }
+
+    .mother-care-section h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .mother-care-track {
+        gap: 14px;
+        padding: 5px 0 15px;
+    }
+
+    .mother-care-card {
+        flex: 0 0 85vw;
+        width: 85vw;
+    }
+
+    .mother-care-card img {
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .mother-care-name {
+        font-size: 15px;
+        min-height: auto;
+    }
+
+    .mother-care-price {
+        font-size: 16px;
+    }
+
+    .mother-care-btn {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .mother-care-view-all-btn {
+        padding: 11px 30px;
+        font-size: 15px;
+    }
+}
