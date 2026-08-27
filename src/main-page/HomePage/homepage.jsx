@@ -121,7 +121,7 @@ function HomePage() {
 
             </div>, 
 
-        {true && (<>//ithu parcel react or vite react ?? vite kulika polayaa nee , you shut u</>)} 
+        {true && (<>//ithu parcel react or vite react ?? vite  , you shut u</>)} 
          <Categories name={"DEEPI"} />
          <BestSellers />
             <Concern />
